@@ -1,13 +1,14 @@
-import React from 'react';
-import Footer from './comp/footer';
-import Header from './comp/header';
+import {Route ,Routes } from "react-router-dom";
+import Callus from './comp/callus';
+import Home from './comp/Home';
 const App = () => {
   return (
-     <>
-      <Header />
-      <Footer />
-      </>
-      
+    <div>
+     <Routes>
+      <Route path='/' element={<Home/>} />
+      <Route path='/callus' element={<Callus/>} />
+      </Routes>
+      </div>
   );
 }
 

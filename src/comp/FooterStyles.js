@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-padding-top: 10px   ;
+padding-top: 10px;
 background: black;
 position: absolute;
 bottom: 0;
@@ -9,7 +9,8 @@ width: 100%;
 
 
 @media (max-width: 1000px) {
-	padding: 70px 30px;
+  padding-top: 10px;
+	padding: 20px 20px;
 }
 `;
 
@@ -33,17 +34,15 @@ display: grid;
 grid-template-columns: repeat(auto-fill,
 						minmax(185px, 1fr));
 grid-gap: 20px;
-
 @media (max-width: 1000px) {
-	grid-template-columns: repeat(auto-fill,
-						minmax(200px, 1fr));
+grid-template-columns: repeat(auto-fill,
+minmax(200px, 1fr));
 }
 `;
 
  
 export const Brag = styled.p`
 color: #fff;
- 
 font-size: 18px;
 text-decoration: none;
 display: flex;

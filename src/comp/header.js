@@ -1,15 +1,22 @@
 import React from 'react';
+import logo from '../image/logo.png';
  import { HeadBox } from "./HeaderStyles";
+ import {BrowserRouter, Link  } from "react-router-dom";
+ import './animation.css';
 function Header() {
   return (
-     <HeadBox>
-    <h1 style={{ color: "green", 
-                   textAlign: "center",
-                   margin: 0, 
-                  }}>
-        GeeksforGeeks: A Computer Science Portal for Geeks
-      </h1>
+    <BrowserRouter>
+    <HeadBox>
+      <HeadBox>
+      <Link to="/" style={{textDecoration: "none"}}>
+      <h1 className='animation2' style={{ color: "white", textAlign: "center",margin: 0 }}>Doom </h1>
+      </Link>
+      <img src={logo} alt=''className='animation' />
       </HeadBox>
+      <HeadBox>
+      </HeadBox>
+    </HeadBox>
+    </BrowserRouter>
   );
 }
 

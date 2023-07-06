@@ -10,7 +10,7 @@ import {
 } from "./FooterStyles";
 const Footer = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       <Box>
        
       <Container>
